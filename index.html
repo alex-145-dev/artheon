@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artheon - Galleria d'Arte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon.ico" type="image/png">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
+        <div class="nav-right">
+            <p id="p_navbar">Eterna</p>
+            <p id="p_navbar">Autentica</p>
+            <p id="p_navbar">Emozionale</p>
+        </div>
+    </nav>
+
+   <!-- HEADER -->
+   <header class="header">
+            <h1 class="logo">ARTHEON</h1>
+        <div class="header-left">
+            <div class="buttons">
+                <button>Prenota</button>
+                <button>Scopri</button>
+            </div>
+        </div>
+</header>
+
+
+<section class="hero">
+    <div class="container">
+
+        <!-- Parte sinistra con immagine -->
+        <div class="side-container left">
+            <img src="img/img_12.jpg" alt="Immagine Sinistra">
+        </div>
+        
+        <!-- Slide al centro (//1)-->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                  <img src="img/img_32_2.webp" alt="Immagine 1">
+                  <img src="img/img_32_2.webp" alt="Immagine 2">
+                  <img src="img/img_32_2.webp" alt="Immagine 3">
+                  <img src="img/img_32_2.webp" alt="Immagine 4">
+                </div>
+            </div>  
+        </div>
+
+        <!-- Parte destra con immagine -->
+        <div class="side-container right">
+            <img src="img/img_12.jpg" alt="Immagine Destra">
+        </div>
+    </div>
+</section>
+
+    <!-- SECTION 2 - CONTAINER CON IMMAGINI -->
+    <section class="gallery">
+        <div class="con_gallery_1">
+                <h2 id="h2_gallery_1">Espresioni dell'anima</h2>
+            <div class="container_1">
+                <img src="img/img_12.jpg" alt="Opera 1">
+            </div>
+                <p id="p_gallery_1">
+                    L’arte è un riflesso dell’anima,
+                    <span class="toggle-text">
+                        <span id="moreText1" style="display: none;"> un ponte tra visibile e invisibile. Ogni immagine custodisce un frammento di tempo,  un’emozione silenziosa che attende di essere scoperta. Osservare un’opera significa perdersi nei suoi dettagli, lasciandosi trasportare oltre i confini della realtà.</span>
+                    </span>
+                        <a href="javascript:void(0);" id="readMoreBtn1" onclick="toggleText1()">...</a>
+                        <a href="javascript:void(0);" id="readLessBtn1" onclick="toggleText1()" style="display: none;">...</a>
+                </p>
+        </div>
+
+        <div class="con_gallery_2">
+            <h2 id="h2_gallery_2">Ombre e luci dell'arte</h2>
+            <div class="container_2">
+                <img src="img/img_4.webp" alt="Opera 2">
+            </div>
+            <!--<h2 id="h2_gallery_3">Imperial</h2>-->
+            <!--Palloncini(//1)-->
+            <div class="balloons-container">
+                <div class="balloon gold"></div>
+                <div class="balloon gold"></div>
+                <div class="balloon gold"></div> 
+            </div>
+        </div>
+
+        <div class="con_gallery_3">
+            <h2 id="h2_gallery_4">Sguardi e silenzio</h2>
+            <div class="container_3">
+                <img src="img/img_12.jpg" alt="Opera 3">
+            </div>
+                <p id="p_gallery_2">Ci sono dettagli che sfuggono 
+                    <span class="toggle-text">
+                        <span id="moreText2" style="display: none;">a uno sguardo distratto, ma rivelano la loro bellezza a chi sa osservare. Ogni opera è   una porta aperta su mondi inesplorati. Un invito a vedere oltre l’apparenza. È nello spazio tra luce e ombra che si nasconde il vero significato, pronto a svelarsi a chi è disposto a guardare davvero.</span>
+                    </span>
+                    <a href="javascript:void(0);" id="readMoreBtn2" onclick="toggleText2()">...</a>
+                    <a href="javascript:void(0);" id="readLessBtn2" onclick="toggleText2()" style="display: none;">...</a>
+                </p>
+            </div>
+    </section>
+
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sinistra -->
+            <div class="footer-left">
+                <p>&copy; 2025 Artheon Tutti i diritti riservati</p>
+                <!--<p>Tutti i diritti riservati</p>-->
+            </div>
+        
+          
+        
+            <!-- Destra -->
+            <div class="footer-right">
+                
+                <p>Contatti: Email: <a href="mailto:info@artheon.com">info@artheon.com</a></p>
+            </div>
+        </div>
+    
+    <!-- Sotto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javaS/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+/*=====---RESET---=====*/
+body, html{ font-size: 16_3x; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; box-sizing: border-box;margin: 0;padding: 0;}
+:before,*:after{ box-sizing: border-box; }
+h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0;padding: 0;}
+ol,ul{list-style-position: inside;}
+small{line-height: 1rem;}
+img{height: auto; width: 100%;}
+a{text-decoration: none;}
+hr{border:none; border-bottom: 1px solid #ddd}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===============================================Index============================================*/
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4ef;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* Container principale */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+/* Container sinistra e destra */
+.side-container {
+    width: 20%; 
+}
+
+.side-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+/* Slide */
+.slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 3s ease;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+/* Aggiungi spazio tra i pulsanti */
+.buttons button:first-child {
+    margin-right: 15px; /* Regola lo spazio come preferisci */
+}
+
+/* Logo centrale */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #333; /* Puoi scegliere il colore che preferisci */
+    font-size: 50px;
+    font-weight: bold;
+    /*text-align: center;*/
+    flex: 1; /* Fa sì che il logo resti al centro */
+}
+
+
+
+/* SECTION 2 - CONTAINER CON IMMAGINI */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.container_1, .container_2, .container_3 {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero {
+    display: flex; 
+    width: 100%;
+    height: 550px;  
+    background-color: #d6d3d3;
+}
+
+.figure_1 {
+    display: flex; 
+    width: 100%;
+    height: auto;
+    margin: 0; 
+}
+
+.side {
+    flex: 0 0 30%;  
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*.figure_1 {
+    flex: 1; 
+    height: 100%;
+    position: relative;
+}*/
+
+/* Impostazioni per le immagini */
+#img_hero, #img_hero_1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*---=====palloncini(//1)=====---*/
+.balloons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 50px;
+}
+
+.balloon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(135deg, #D8C3A5, #F5DEB3, #D8C3A5); /* Beige seta */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.balloon:hover {
+    transform: scale(1.1);
+}
+
+/* Filo del palloncino */
+/*.balloon::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
+
+/*---=====titoli=====---*/
+#h2_gallery_1, #h2_gallery_2, #h2_gallery_4{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 23px; 
+}
+
+#h2_gallery_3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px; 
+}
+
+/*---=====paragrafi=====---*/
+/*(//1)*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/*(//1)*/
+#p_gallery_1, #p_gallery_2{
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+  /*---=====p(//1)=====---*/
+@media (min-width: 768px) { /* Mostra tutto su schermi grandi */
+#moreText1 {
+    display: inline !important;
+}
+    #readMoreBtn1, #readLessBtn1 {
+    display: none !important;
+}
+}
+
+/*---=====p(//2)=====---*/
+@media (min-width: 768px) { /* Mostra tutto su schermi grandi */
+    #moreText2 {
+        display: inline !important;
+    }
+    #readMoreBtn2, #readLessBtn2 {
+        display: none !important;
+    }
+}
+
+/*=====---media query=====---*/
+@media (max-width: 767px) {
+ 
+    .slider {
+        width: 100%;
+        height: auto;
+      }
+
+   
+
+    .side-container {
+        width: 120%; 
+    }
+
+    .hero {
+        height: 200px;  
+    }
+
+    .header-left button {
+        padding: 8px 12px;
+        width: 80px;
+    }
+
+    .header {
+        padding: 25px 10px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .buttons button {
+        padding: 8px 12px;
+        width: 70px;
+      
+    
+    }
+
+    /* Aggiungi spazio tra i pulsanti */
+    .buttons button:first-child {
+     margin-right: 10px; /* Regola lo spazio come preferisci */
+    }
+
+    .gallery {
+        gap: 5px;
+        padding: 20px 5px;
+        margin-bottom: 20px;
+    }
+
+    .con_gallery_1,  .con_gallery_3{
+        width: 250px;
+    }
+
+    .con_gallery_2{
+        width: 320px;
+       
+    }
+
+    .header-right button {
+        width: 20%;
+    }
+
+    /*---=====titoli=====---*/
+    #h2_gallery_1, #h2_gallery_2, #h2_gallery_4{
+        
+        font-size: 13px; 
+    }
+
+    #h2_gallery_3{
+        
+        font-size: 13px; 
+    }
+
+    /*---=====paragrafi=====---*/
+    #p_gallery_1, #p_gallery_2{
+        margin-top: 10px;
+        font-family: 'Lora', serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #444;
+    }
+
+    #p_navbar{
+        font-size: 13px;
+        /*margin-left: 15px;*/
+    }
+
+    .balloons-container {
+        width: 100%;
+        margin-top: 20px;
+        gap: 10px;
+        
+    }
+
+    .balloon {
+        width: 30px;
+        height: 30px;
+       
+    }
+}
+
+
+
+/*===============================================FOOTER==========================================*/
+/* FOOTER */
+.footer {
+    padding: 30px 20px;
+    background-color:  #c0bebe;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    /*border-top: 2px solid #444;*/
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .social-media {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.social-media a {
+    transition: transform 0.3s;
+  
+}
+
+.footer .social-media a:hover {
+    transform: scale(1.2);
+}
+
+.footer .social-media img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #000000;
+}
+
+
+
+
+.footer-bottom {
+    text-align: center;
+}
+
+.social-media a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+
+/* FOOTER - Responsive per Telefoni */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-left {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+   
+
+    .footer-right {
+        order: 3;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        order: 4;
+        margin-top: 25px;
+    }
+
+    .footer .social-media {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer .social-media img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
