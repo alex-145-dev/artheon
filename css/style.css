@@ -16,6 +16,36 @@ hr{border:none; border-bottom: 1px solid #ddd}
 }
 
 /*===============================================Index============================================*/
+ /* Stile del pulsante rotondo */
+ .logo-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effetto al passaggio del mouse */
+.logo-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile dell'immagine del logo */
+.logo-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 
 body {
@@ -267,7 +297,7 @@ body {
 }
 
   /*---=====p(//1)=====---*/
-@media (min-width: 768px) { /* Mostra tutto su schermi grandi */
+@media (min-width: 1024px) { /* Mostra tutto su schermi grandi */
 #moreText1 {
     display: inline !important;
 }
@@ -277,7 +307,7 @@ body {
 }
 
 /*---=====p(//2)=====---*/
-@media (min-width: 768px) { /* Mostra tutto su schermi grandi */
+@media (min-width: 1024px) { /* Mostra tutto su schermi grandi */
     #moreText2 {
         display: inline !important;
     }
@@ -285,23 +315,95 @@ body {
         display: none !important;
     }
 }
-
-/*=====---media query=====---*/
-@media (max-width: 767px) {
- 
+/*=====--- Media Query per Tablet (768px - 1024px) ---=====*/
+@media (max-width: 1024px) {
     .slider {
         width: 100%;
         height: auto;
-      }
-
-   
+    }
 
     .side-container {
-        width: 120%; 
+        width: 40%;
     }
 
     .hero {
-        height: 200px;  
+        height: 250px;
+    }
+
+    .header-left button, .buttons button {
+        padding: 10px 15px;
+        width: 90px;
+    }
+
+    .header {
+        padding: 30px 10px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .buttons button:first-child {
+        margin-right: 12px;
+    }
+
+    .gallery {
+        gap: 10px;
+        padding: 30px 10px;
+        margin-bottom: 1px;
+    }
+
+    .con_gallery_1, .con_gallery_3 {
+        width: 300px;
+    }
+
+    .con_gallery_2 {
+        width: 350px;
+    }
+
+    .header-right button {
+        width: 25%;
+    }
+
+    /* Titoli */
+    #h2_gallery_1, #h2_gallery_2, #h2_gallery_3, #h2_gallery_4 {
+        font-size: 15px;
+    }
+
+    /* Paragrafi */
+    #p_gallery_1, #p_gallery_2 {
+        font-size: 16px;
+    }
+
+    #p_navbar {
+        font-size: 14px;
+    }
+
+    .balloons-container {
+        width: 100%;
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .balloon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*=====--- Media Query per Smartphone (max 767px) ---=====*/
+@media (max-width: 767px) {
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+
+    .side-container {
+        width: 120%;
+    }
+
+    .hero {
+        height: 200px;
     }
 
     .header-left button {
@@ -310,80 +412,63 @@ body {
     }
 
     .header {
-        padding: 25px 10px;
+        padding: 25px 5px;
     }
 
     .logo {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .buttons button {
         padding: 8px 12px;
         width: 70px;
-      
-    
     }
 
-    /* Aggiungi spazio tra i pulsanti */
     .buttons button:first-child {
-     margin-right: 10px; /* Regola lo spazio come preferisci */
+        margin-right: 10px;
     }
 
     .gallery {
         gap: 5px;
         padding: 20px 5px;
-        margin-bottom: 20px;
+        margin-bottom: 1px;
     }
 
-    .con_gallery_1,  .con_gallery_3{
+    .con_gallery_1, .con_gallery_3 {
         width: 250px;
     }
 
-    .con_gallery_2{
+    .con_gallery_2 {
         width: 320px;
-       
     }
 
     .header-right button {
         width: 20%;
     }
 
-    /*---=====titoli=====---*/
-    #h2_gallery_1, #h2_gallery_2, #h2_gallery_4{
-        
-        font-size: 13px; 
-    }
-
-    #h2_gallery_3{
-        
-        font-size: 13px; 
-    }
-
-    /*---=====paragrafi=====---*/
-    #p_gallery_1, #p_gallery_2{
-        margin-top: 10px;
-        font-family: 'Lora', serif;
-        font-size: 15px;
-        line-height: 1.6;
-        color: #444;
-    }
-
-    #p_navbar{
+    /* Titoli */
+    #h2_gallery_1, #h2_gallery_2, #h2_gallery_3, #h2_gallery_4 {
         font-size: 13px;
-        /*margin-left: 15px;*/
+    }
+
+    /* Paragrafi */
+    #p_gallery_1, #p_gallery_2 {
+        font-size: 15px;
+    }
+
+    #p_navbar {
+        font-size: 13px;
     }
 
     .balloons-container {
         width: 100%;
         margin-top: 20px;
         gap: 10px;
-        
     }
 
     .balloon {
         width: 30px;
         height: 30px;
-       
     }
 }
 
